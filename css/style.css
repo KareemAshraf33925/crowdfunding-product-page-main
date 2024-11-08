@@ -1,0 +1,1594 @@
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Commissioner", sans-serif;
+    background-color:#e6e1e1;
+}
+:root{
+    --Moderatecyan: hsl(176, 50%, 47%);
+    --Darkcyan: hsl(176, 72%, 28%);
+    --Black: hsl(0, 0%, 0%);
+    --Darkgray: hsl(0, 0%, 48%);
+}
+header{
+    background-image: url(../images/image-hero-desktop.jpg);
+    background-position: center/center;
+    background-size:contain;
+    background-repeat: no-repeat;
+    height: 70vh;
+}
+/* start-header */
+header .container{
+    padding: 50px 90px;
+}
+header .container .crowd{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .container .crowd .items{
+    list-style: none;
+}
+header .container .crowd .items .item{
+    display: inline-block;
+    margin-right: 20px;
+}
+header .container .crowd .items .item a{
+    cursor: pointer;
+    font-family:"Commissioner";
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    padding-bottom: 3px;
+    transition: all 0.1s;
+}
+header .container .crowd .items .item:first-child:hover a::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 2px;
+    border-radius: 20px;
+    background-color: #fff;
+    animation: animatwidth 0.6s ease;
+}
+@keyframes animatwidth{
+    from{
+        width: 0;
+    }
+    to{
+        width: 45px;
+    }
+}
+header .container .crowd .items .item:nth-child(2):hover a::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 2px;
+    border-radius: 20px;
+    background-color: #fff;
+    animation: animatwidth1 0.6s ease;
+}
+@keyframes animatwidth1{
+    from{
+        width: 0;
+    }
+    to{
+        width: 60px;
+    }
+}
+header .container .crowd .items .item:nth-child(3):hover a::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 2px;
+    border-radius: 20px;
+    background-color: #fff;
+    animation: animatwidth2 0.6s ease;
+}
+@keyframes animatwidth2{
+    from{
+        width: 0;
+    }
+    to{
+        width: 85px;
+    }
+}
+header .container .crowd .hamburger{
+    display: none;
+}
+header .container .crowd .close-menu{
+    display: none;
+    transition: all 0.6s;
+    cursor: pointer;
+}
+/* end-header */
+/* start-main */
+main {
+    position: relative;
+    bottom: 100px;
+}
+main .container{
+    margin: 0 300px ;
+}
+main .container .mointerrise .mastercraft{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    position: relative;
+    border-radius: 5px;
+    background-color: #fff;
+    margin: 0 0 40px 0;
+    height: auto;
+}
+main .container .mointerrise .mastercraft .logo-mastercraft{
+    position: absolute;
+    top: -20px;
+    left: 330px;
+}
+main .container .mointerrise .mastercraft h1{
+    font-family:"Commissioner";
+    font-weight: 700;
+    margin: 50px 0 20px 130px;
+}
+main .container .mointerrise .mastercraft p{
+    font-family:"Commissioner";
+    font-weight: 500;
+    color: var(--Darkgray);
+    margin-left: 130px;
+}
+main .container .mointerrise .mastercraft .book{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 30px 0;
+}
+main .container .mointerrise .mastercraft .book .back{
+    padding: 15px 30px;
+    border-radius: 30px;
+    color: #fff;
+    background-color: var(--Moderatecyan);
+    font-family:"Commissioner";
+    font-weight: 500;
+    transition: all 0.6s;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    margin-left: 40px;
+}
+main .container .mointerrise .mastercraft .book .back:hover{
+    background-color: var(--Darkcyan);
+}
+main .container .mointerrise .mastercraft .book .mark{
+    display: flex;
+    margin-right: 30px;
+    position: relative;
+}
+main .container .mointerrise .mastercraft .book .mark .icon-bookmark{
+    position: absolute;
+    top: 0;
+    right: 120px;
+    cursor: pointer;
+}
+main .container .mointerrise .mastercraft .book .mark .boomar{
+    padding: 15px 40px;
+    font-family:"Commissioner";
+    font-weight: 500;
+    transition: all 0.6s;
+    cursor: pointer;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+}
+main .container .mointerrise .total-recordnumber{
+    background-color: #fff;
+    border-radius: 5px;
+    margin: 0 0 30px 0;
+    padding: 0 0 30px 0;
+}
+main .container .mointerrise .total-recordnumber .numbers{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     gap: 50px;
+     padding: 50px 0;
+}
+main .container .mointerrise .total-recordnumber .numbers .backed h2{
+    font-family:"Commissioner";
+    font-weight: 700;
+    font-size: 35px;
+}
+main .container .mointerrise .total-recordnumber .numbers .backed p{
+    font-family:"Commissioner";
+    font-weight: 400;
+    color: var(--Darkgray);
+}
+main .container .mointerrise .total-recordnumber .numbers .backer{
+    border-right: 1px solid var(--Darkgray);
+    border-left: 1px solid var(--Darkgray);
+    padding: 0 50px;
+}
+main .container .mointerrise .total-recordnumber .numbers .backer h2{
+    font-family:"Commissioner";
+    font-weight: 700;
+    font-size: 35px;
+}
+main .container .mointerrise .total-recordnumber .numbers .backer p{
+    font-family:"Commissioner";
+    font-weight: 400;
+    color: var(--Darkgray);
+}
+main .container .mointerrise .total-recordnumber .numbers .days h2{
+    font-family:"Commissioner";
+    font-weight: 700;
+    font-size: 35px;
+}
+main .container .mointerrise .total-recordnumber .numbers .days p{
+    font-family:"Commissioner";
+    font-weight: 400;
+    color: var(--Darkgray);
+}
+main .container .mointerrise .total-recordnumber .progers{
+    position: relative;
+}
+main .container .mointerrise .total-recordnumber .progers::before{
+    content: " ";
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 120px;
+    height: 15px;
+    width: 60%;
+    border-radius: 20px;
+    background-color: var(--Moderatecyan);
+}
+main .container .mointerrise .total-recordnumber .progers .range{
+    display: inline-block;   
+    margin-left: 120px;
+    border-radius: 20px;
+    height: 15px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 80%;
+}
+main .container .mointerrise .total-recordnumber .progers .range::-webkit-progress-bar{
+    background-color: var(--Darkgray); 
+}
+main .container .mointerrise .total-recordnumber .progers .range::-webkit-progress-value{
+    background-color: var(--Moderatecyan);
+}
+main .container .mointerrise .total-recordnumber .progers .range::-moz-progress-bar{
+    background:#ddd;
+}
+
+main .container .mointerrise .about{
+    background-color: #fff;
+    border-radius: 5px;
+    padding-bottom: 30px;
+    margin-bottom: 20px;
+}
+main .container .mointerrise .about .about-content{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+}
+main .container .mointerrise .about .about-content h2{
+    font-family:"Commissioner";
+    font-weight: 700;
+    margin: 40px 0 30px 50px;
+}
+main .container .mointerrise .about .about-content .bam{
+    font-family:"Commissioner";
+    font-weight: 500;
+    line-height: 25px;
+    color: var(--Darkgray);
+    margin: 20px 70px 20px 50px;
+}
+main .container .mointerrise .about .about-content .feat{
+    font-family:"Commissioner";
+    font-weight: 500;
+    line-height: 25px;
+    color: var(--Darkgray);
+    margin: 20px 50px 20px 50px;
+}
+main .container .mointerrise .about .bamboo{
+    border: 1px solid var(--Darkgray);
+    border-radius: 5px;
+    margin: 0 50px 0;
+}
+main .container .mointerrise .about .bamboo div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+main .container .mointerrise .about .bamboo div h2{
+    font-family:"Commissioner";
+    font-weight: 700;
+    margin: 40px 0 30px 30px;
+}
+main .container .mointerrise .about .bamboo div .pledge{
+    display: inline-block;
+    color: var(--Moderatecyan);
+    font-family:"Commissioner";
+    font-weight: 500;
+    margin: 10px 40px 0 0;
+}
+main .container .mointerrise .about .bamboo .ergonomic{
+    font-family:"Commissioner";
+    font-weight: 500;
+    line-height: 25px;
+    color: var(--Darkgray);
+    margin: 20px 50px 20px 30px;
+}
+main .container .mointerrise .about .bamboo .select h3{
+    font-family:"Commissioner";
+    font-weight: 700;
+    margin: 40px 20px 30px 30px;
+}
+main .container .mointerrise .about .bamboo .select{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+main .container .mointerrise .about .bamboo .select h3 sup{
+    display: inline-block;
+    font-family:"Commissioner";
+    font-weight: 500;
+    color: var(--Darkgray);
+}
+main .container .mointerrise .about .bamboo .select .select-bambo{
+    padding: 10px 30px;
+    border-radius: 30px;
+    color: #fff;
+    background-color: var(--Moderatecyan);
+    font-family:"Commissioner";
+    font-weight: 500;
+    transition: all 0.6s;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    margin-right: 30px;
+}
+main .container .mointerrise .about .bamboo .select .select-bambo:hover{
+    background-color: var(--Darkcyan);
+}
+/* ------------------------------ */
+main .container .mointerrise .about .black-edition{
+    border: 1px solid var(--Darkgray);
+    border-radius: 5px;
+    margin: 20px 50px 20px;
+}
+main .container .mointerrise .about .black-edition div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+main .container .mointerrise .about .black-edition div h2{
+    font-family:"Commissioner";
+    font-weight: 700;
+    margin: 40px 0 30px 30px;
+}
+main .container .mointerrise .about .black-edition div .pledge{
+    display: inline-block;
+    color: var(--Moderatecyan);
+    font-family:"Commissioner";
+    font-weight: 500;
+    margin: 10px 40px 0 0;
+}
+main .container .mointerrise .about .black-edition .black{
+    font-family:"Commissioner";
+    font-weight: 500;
+    line-height: 25px;
+    color: var(--Darkgray);
+    margin: 20px 50px 20px 30px;
+}
+main .container .mointerrise .about .black-edition .select h3{
+    font-family:"Commissioner";
+    font-weight: 700;
+    margin: 40px 20px 30px 30px;
+}
+main .container .mointerrise .about .black-edition .select{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+main .container .mointerrise .about .black-edition .select h3 sup{
+    display: inline-block;
+    font-family:"Commissioner";
+    font-weight: 500;
+    color: var(--Darkgray);
+}
+main .container .mointerrise .about .black-edition .select .select-black{
+    padding: 10px 30px;
+    border-radius: 30px;
+    color: #fff;
+    background-color: var(--Moderatecyan);
+    font-family:"Commissioner";
+    font-weight: 500;
+    transition: all 0.6s;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    margin-right: 30px;
+}
+main .container .mointerrise .about .black-edition .select .select-black:hover{
+    background-color: var(--Darkcyan);
+}
+/* ------------------------------ */
+main .container .mointerrise .about .mahogany-edition{
+    border: 1px solid var(--Darkgray);
+    border-radius: 5px;
+    margin: 20px 50px 20px;
+}
+main .container .mointerrise .about .mahogany-edition div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+main .container .mointerrise .about .mahogany-edition div h2{
+    font-family:"Commissioner";
+    font-weight: 700;
+    margin: 40px 0 30px 30px;
+    color: var(--Darkgray);
+}
+main .container .mointerrise .about .mahogany-edition div .pledge{
+    display: inline-block;
+    color: hsla(176, 50%, 47%, 0.685);
+    font-family:"Commissioner";
+    font-weight: 500;
+    margin: 10px 40px 0 0;
+}
+main .container .mointerrise .about .mahogany-edition .mahogany{
+    font-family:"Commissioner";
+    font-weight: 500;
+    line-height: 25px;
+    color: var(--Darkgray);
+    margin: 20px 50px 20px 30px;
+}
+main .container .mointerrise .about .mahogany-edition .select h3{
+    font-family:"Commissioner";
+    font-weight: 700;
+    margin: 40px 20px 30px 30px;
+    color: var(--Darkgray);
+}
+main .container .mointerrise .about .mahogany-edition .select{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+main .container .mointerrise .about .mahogany-edition .select h3{
+    color: var(--Darkgray);
+}
+main .container .mointerrise .about .mahogany-edition .select h3 sup{
+    display: inline-block;
+    font-family:"Commissioner";
+    font-weight: 500;
+    color: var(--Darkgray);
+}
+main .container .mointerrise .about .mahogany-edition .select .select-stock{
+    padding: 10px 30px;
+    border-radius: 30px;
+    color: #fff;
+    background-color: var(--Darkgray);
+    font-family:"Commissioner";
+    font-weight: 500;
+    transition: all 0.6s;
+    cursor:not-allowed;
+    border: none;
+    outline: none;
+    margin-right: 30px;
+}
+
+/* end-main */
+/* start-model */
+.model-back {
+    position: absolute;
+    top:0;
+    background-color: rgba(0, 0, 0, 0.452);
+    height: 2700px;
+    display: none;
+}
+.model-back .container .back-project{
+    background-color: #fff;
+    border-radius: 5px;
+    position: relative;
+    padding-bottom: 20px;
+    margin: 160px 300px 20px;
+}
+.model-back .container .back-project h2{
+    font-family:"Commissioner";
+    font-weight: 700;
+    margin: 20px 0px 0px 30px;
+    padding-top: 30px;
+}
+.model-back .container .back-project p{
+    font-family:"Commissioner";
+    font-weight: 500;
+    line-height: 25px;
+    color: var(--Darkgray);
+    margin: 20px 50px 20px 30px;
+}
+.model-back .container .back-project .close-modal{
+    position: absolute;
+    top:20px;
+    right:27px;
+    cursor: pointer;
+}
+/* ----------------------------------------- */
+.model-back .container .back-project #form .pled-no-reward{
+    border: 1px solid var(--Darkgray);
+    border-radius: 5px;
+    margin: 0 30px;
+}
+.model-back .container .back-project #form .pled-no-reward #now-reward{
+    accent-color: var(--Moderatecyan);
+    appearance: none;
+    position: relative;
+}
+.model-back .container .back-project #form .pled-no-reward #now-reward::before{
+    content: " ";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    outline: 5px solid #e5e9ec;
+    outline-offset: -5px;
+    border: 1px solid #e5e9ec ;
+    position:absolute;
+    top: 0;
+    left: 20px;
+    cursor: pointer;
+}
+ .model-back .container .back-project #form .pled-no-reward #now-reward::after{
+    content: " ";
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: var(--Moderatecyan);
+    position:absolute;
+    top: 5px;
+    left: 25px;
+    cursor: pointer;
+    display: none;
+}
+.model-back .container .back-project #form .pled-no-reward.active #now-reward::after{
+    display: block;
+}
+.model-back .container .back-project #form .pled-no-reward label{
+    font-family:"Commissioner";
+    font-weight: 700;
+    position: relative;
+    top: 15px;
+    left: 60px;
+    cursor: pointer;
+}
+.model-back .container .back-project #form .pled-no-reward p{
+    font-family:"Commissioner";
+    font-weight: 400;
+    color: var(--Darkgray);
+    margin: 30px 0 30px 60px;
+}
+.model-back .container .back-project #form .pled-no-reward .enter-pledg{
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid var(--Darkgray);
+    margin-top: 30px;
+    padding: 30px;
+    transition: all 0.6s;
+}
+.model-back .container .back-project #form .pled-no-reward.active .enter-pledg{
+    display: flex;
+}
+.model-back .container .back-project #form .pled-no-reward .enter-pledg span{
+    display: inline-block;
+    font-family:"Commissioner";
+    font-weight: 400;
+    color: var(--Darkgray);
+}
+.model-back .container .back-project #form .pled-no-reward .enter-pledg div span{
+    display: inline-block;
+    position: relative;
+    left: 30px;
+    font-family:"Commissioner";
+    font-weight: 500;
+}
+.model-back .container .back-project #form .pled-no-reward .enter-pledg div .number{
+    appearance:text-filled;
+    -webkit-appearance:textfield;
+    -moz-appearance:textfield;
+    border: none;
+    outline: none;
+    border: 1px solid var(--Darkgray);
+    border-radius: 30px;
+    padding: 10px 30px;
+    width: 100px;
+    transition: all 0.6s;
+    font-family:"Commissioner";
+    font-weight: 500;
+    cursor: pointer;
+}
+.model-back .container .back-project #form .pled-no-reward .enter-pledg div .number:hover{
+    border-color: var(--Moderatecyan);
+}
+.model-back .container .back-project #form .pled-no-reward .enter-pledg div .continue{
+   display: inline-block;
+    padding: 10px 30px;
+    border-radius: 30px;
+    color: #fff;
+    background-color: var(--Moderatecyan);
+    font-family:"Commissioner";
+    font-weight: 500;
+    transition: all 0.6s;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+.model-back .container .back-project #form .pled-no-reward .enter-pledg div .continue:hover{
+    background-color: var(--Darkcyan);
+}
+/* -------------------------------------- */
+.model-back .container .back-project #form .bambo-stand{
+    border: 1px solid var(--Darkgray);
+    border-radius: 5px;
+    margin: 30px 30px;
+    position: relative;
+}
+.model-back .container .back-project #form .bambo-stand #now-reward{
+    accent-color: var(--Moderatecyan);
+    appearance: none;
+    position: relative;
+}
+.model-back .container .back-project #form .bambo-stand #now-reward::before{
+    content: " ";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    outline: 5px solid #e5e9ec;
+    outline-offset: -5px;
+    border: 1px solid #e5e9ec ;
+    position:absolute;
+    top: 0;
+    left: 20px;
+    cursor: pointer;
+}
+ .model-back .container .back-project #form .bambo-stand #now-reward::after{
+    content: " ";
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: var(--Moderatecyan);
+    position:absolute;
+    top: 5px;
+    left: 25px;
+    cursor: pointer;
+    display: none;
+}
+.model-back .container .back-project #form .bambo-stand.active #now-reward::after{
+    display: block;
+}
+.model-back .container .back-project #form .bambo-stand label{
+    font-family:"Commissioner";
+    font-weight: 700;
+    position: relative;
+    top: 15px;
+    left: 60px;
+    cursor: pointer;
+    display: inline-block;
+}
+.model-back .container .back-project #form .bambo-stand .pled{
+    display: inline-block;
+    font-family:"Commissioner";
+    font-weight: 500;
+    color: var(--Moderatecyan);
+    position: absolute;
+    top: 15px;
+   left: 185px;
+}
+.model-back .container .back-project #form .bambo-stand h3{
+    font-family:"Commissioner";
+    font-weight: 500;
+    position: absolute;
+    top: 12px;
+    right: 30px;
+}
+.model-back .container .back-project #form .bambo-stand h3 sup{
+    font-family:"Commissioner";
+    font-weight: 400;
+    color: var(--Darkgray);
+}
+.model-back .container .back-project #form .bambo-stand p{
+    font-family:"Commissioner";
+    font-weight: 400;
+    color: var(--Darkgray);
+    margin: 30px 0 30px 60px;
+}
+.model-back .container .back-project #form .bambo-stand .enter-pledg{
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid var(--Darkgray);
+    margin-top: 30px;
+    padding: 30px;
+    transition: all 0.6s;
+}
+.model-back .container .back-project #form .bambo-stand.active .enter-pledg{
+    display: flex;
+}
+.model-back .container .back-project #form .bambo-stand .enter-pledg span{
+    display: inline-block;
+    font-family:"Commissioner";
+    font-weight: 400;
+    color: var(--Darkgray);
+}
+.model-back .container .back-project #form .bambo-stand .enter-pledg div span{
+    display: inline-block;
+    position: relative;
+    left: 30px;
+    font-family:"Commissioner";
+    font-weight: 500;
+}
+.model-back .container .back-project #form .bambo-stand .enter-pledg div .number{
+    appearance:text-filled;
+    -webkit-appearance:textfield;
+    -moz-appearance:textfield;
+    border: none;
+    outline: none;
+    border: 1px solid var(--Darkgray);
+    border-radius: 30px;
+    padding: 10px 30px;
+    width: 100px;
+    transition: all 0.6s;
+    font-family:"Commissioner";
+    font-weight: 500;
+    cursor: pointer;
+}
+.model-back .container .back-project #form .bambo-stand .enter-pledg div .number:hover{
+    border-color: var(--Moderatecyan);
+}
+.model-back .container .back-project #form .bambo-stand .enter-pledg div .continue{
+   display: inline-block;
+    padding: 10px 30px;
+    border-radius: 30px;
+    color: #fff;
+    background-color: var(--Moderatecyan);
+    font-family:"Commissioner";
+    font-weight: 500;
+    transition: all 0.6s;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+.model-back .container .back-project #form .bambo-stand .enter-pledg div .continue:hover{
+    background-color: var(--Darkcyan);
+}
+/* ----------------- */
+.model-back .container .back-project #form .black-edition-stand{
+    border: 1px solid var(--Darkgray);
+    border-radius: 5px;
+    margin: 30px 30px;
+    position: relative;
+}
+.model-back .container .back-project #form .black-edition-stand #now-reward{
+    accent-color: var(--Moderatecyan);
+    appearance: none;
+    position: relative;
+}
+.model-back .container .back-project #form .black-edition-stand #now-reward::before{
+    content: " ";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    outline: 5px solid #e5e9ec;
+    outline-offset: -5px;
+    border: 1px solid #e5e9ec ;
+    position:absolute;
+    top: 0;
+    left: 20px;
+    cursor: pointer;
+}
+ .model-back .container .back-project #form .black-edition-stand #now-reward::after{
+    content: " ";
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: var(--Moderatecyan);
+    position:absolute;
+    top: 5px;
+    left: 25px;
+    cursor: pointer;
+    display: none;
+}
+.model-back .container .back-project #form .black-edition-stand.active #now-reward::after{
+    display: block;
+}
+.model-back .container .back-project #form .black-edition-stand label{
+    font-family:"Commissioner";
+    font-weight: 700;
+    position: relative;
+    top: 15px;
+    left: 60px;
+    cursor: pointer;
+    display: inline-block;
+}
+.model-back .container .back-project #form .black-edition-stand .pled{
+    display: inline-block;
+    font-family:"Commissioner";
+    font-weight: 500;
+    color: var(--Moderatecyan);
+    position: absolute;
+    top: 15px;
+   left: 220px;
+}
+.model-back .container .back-project #form .black-edition-stand h3{
+    font-family:"Commissioner";
+    font-weight: 500;
+    position: absolute;
+    top: 12px;
+    right: 30px;
+}
+.model-back .container .back-project #form .black-edition-stand h3 sup{
+    font-family:"Commissioner";
+    font-weight: 400;
+    color: var(--Darkgray);
+}
+.model-back .container .back-project #form .black-edition-stand p{
+    font-family:"Commissioner";
+    font-weight: 400;
+    color: var(--Darkgray);
+    margin: 30px 0 30px 60px;
+}
+.model-back .container .back-project #form .black-edition-stand .enter-pledg{
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid var(--Darkgray);
+    margin-top: 30px;
+    padding: 30px;
+    transition: all 0.6s;
+}
+.model-back .container .back-project #form .black-edition-stand.active .enter-pledg{
+ display: flex;
+}
+.model-back .container .back-project #form .black-edition-stand .enter-pledg span{
+    display: inline-block;
+    font-family:"Commissioner";
+    font-weight: 400;
+    color: var(--Darkgray);
+}
+.model-back .container .back-project #form .black-edition-stand .enter-pledg div span{
+    display: inline-block;
+    position: relative;
+    left: 30px;
+    font-family:"Commissioner";
+    font-weight: 500;
+}
+.model-back .container .back-project #form .black-edition-stand .enter-pledg div .number{
+    appearance:text-filled;
+    -webkit-appearance:textfield;
+    -moz-appearance:textfield;
+    border: none;
+    outline: none;
+    border: 1px solid var(--Darkgray);
+    border-radius: 30px;
+    padding: 10px 30px;
+    width: 100px;
+    transition: all 0.6s;
+    font-family:"Commissioner";
+    font-weight: 500;
+    cursor: pointer;
+}
+.model-back .container .back-project #form .black-edition-stand .enter-pledg div .number:hover{
+    border-color: var(--Moderatecyan);
+}
+.model-back .container .back-project #form .black-edition-stand .enter-pledg div .continue{
+   display: inline-block;
+    padding: 10px 30px;
+    border-radius: 30px;
+    color: #fff;
+    background-color: var(--Moderatecyan);
+    font-family:"Commissioner";
+    font-weight: 500;
+    transition: all 0.6s;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+.model-back .container .back-project #form .black-edition-stand .enter-pledg div .continue:hover{
+    background-color: var(--Darkcyan);
+}
+/* ---------------------------- */
+.model-back .container .back-project #form .mahogany-special{
+    border: 1px solid var(--Darkgray);
+    border-radius: 5px;
+    margin: 30px 30px;
+    position: relative;
+}
+.model-back .container .back-project #form .mahogany-special #now-reward{
+    accent-color: var(--Moderatecyan);
+    appearance: none;
+    position: relative;
+}
+.model-back .container .back-project #form .mahogany-special #now-reward::before{
+    content: " ";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    outline: 5px solid #e5e9ec;
+    outline-offset: -5px;
+    border: 1px solid #e5e9ec ;
+    position:absolute;
+    top: 0;
+    left: 20px;
+    cursor: pointer;
+}
+ /* .model-back .container .back-project #form .mahogany-special #now-reward::after{
+    content: " ";
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: var(--Moderatecyan);
+    position:absolute;
+    top: 5px;
+    left: 25px;
+    cursor: pointer;
+} */
+.model-back .container .back-project #form .mahogany-special label{
+    font-family:"Commissioner";
+    font-weight: 700;
+    position: relative;
+    top: 15px;
+    left: 60px;
+    cursor: pointer;
+    display: inline-block;
+    opacity: 0.5;
+}
+.model-back .container .back-project #form .mahogany-special .pled{
+    display: inline-block;
+    font-family:"Commissioner";
+    font-weight: 500;
+    color: var(--Moderatecyan);
+    position: absolute;
+    top: 15px;
+   left: 220px;
+   opacity: 0.5;
+}
+.model-back .container .back-project #form .mahogany-special h3{
+    font-family:"Commissioner";
+    font-weight: 700;
+    position: absolute;
+    top: 12px;
+    right: 30px;
+    opacity: 0.5;
+}
+.model-back .container .back-project #form .mahogany-special h3 sup{
+    font-family:"Commissioner";
+    font-weight: 400;
+    color: var(--Darkgray);
+    opacity: 0.5;
+}
+.model-back .container .back-project #form .mahogany-special p{
+    font-family:"Commissioner";
+    font-weight: 400;
+    color: var(--Darkgray);
+    margin: 30px 0 30px 60px;
+    opacity: 0.5;
+}
+.model-back .container .back-project #form .mahogany-special .enter-pledg{
+    display:none;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid var(--Darkgray);
+    margin-top: 30px;
+    padding: 30px;
+    transition: all 0.6s;
+}
+.model-back .container .back-project #form .mahogany-special.active .enter-pledg{
+    display: flex;
+}
+.model-back .container .back-project #form .mahogany-special .enter-pledg span{
+    display: inline-block;
+    font-family:"Commissioner";
+    font-weight: 400;
+    color: var(--Darkgray);
+}
+.model-back .container .back-project #form .mahogany-special .enter-pledg div span{
+    display: inline-block;
+    position: relative;
+    left: 30px;
+    font-family:"Commissioner";
+    font-weight: 500;
+}
+.model-back .container .back-project #form .mahogany-special .enter-pledg div .number{
+    appearance:text-filled;
+    -webkit-appearance:textfield;
+    -moz-appearance:textfield;
+    border: none;
+    outline: none;
+    border: 1px solid var(--Darkgray);
+    border-radius: 30px;
+    padding: 10px 30px;
+    width: 100px;
+    transition: all 0.6s;
+    font-family:"Commissioner";
+    font-weight: 500;
+    cursor: not-allowed;
+}
+.model-back .container .back-project #form .mahogany-special .enter-pledg div .number:hover{
+    border-color: var(--Moderatecyan);
+}
+.model-back .container .back-project #form .mahogany-special .enter-pledg div .continue{
+   display: inline-block;
+    padding: 10px 30px;
+    border-radius: 30px;
+    color: #fff;
+    background-color: var(--Darkcyan);
+    font-family:"Commissioner";
+    font-weight: 500;
+    transition: all 0.6s;
+    cursor:not-allowed;
+    border: none;
+    outline: none;
+}
+/* ----------------------- */
+/* end-model */
+
+.model-support {
+    position: absolute;
+    top:0;
+    background-color: rgba(0, 0, 0, 0.452);
+    height: 2260px;
+    display: none;
+}
+
+.model-support .container .support{
+    background-color: #fff;
+    border-radius: 5px;
+    text-align: center;
+    padding-bottom: 30px;
+    margin: 450px 400px 30px;
+}
+.model-support .container .support img{
+    margin: 50px 0;
+}
+.model-support .container .support h2{
+    font-family:"Commissioner";
+    font-weight: 700;
+}
+.model-support .container .support p{
+    font-family:"Commissioner";
+    font-weight: 500;
+    color: var(--Darkgray);
+    margin: 30px 50px;
+    line-height: 25px;
+}
+.model-support .container .support .got{
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 30px;
+    color: #fff;
+    background-color: var(--Moderatecyan);
+    font-family:"Commissioner";
+    font-weight: 500;
+    transition: all 0.6s;
+    cursor:pointer;
+    border: none;
+    outline: none;
+}
+.model-support .container .support .got:hover{
+   background-color: var(--Darkcyan);
+}
+/* media-query */
+@media(max-width:1024px){
+    main {
+        position: absolute;
+        top: 190px;
+      }
+      main .container {
+        margin: 0 208px;
+      }
+      main .container .mointerrise .mastercraft .logo-mastercraft {
+        left: 280px;
+      }
+      main .container .mointerrise .mastercraft h1 {
+        margin: 50px 0 20px 45px;
+      }
+      main .container .mointerrise .mastercraft p {
+        margin-left: 50px;
+      }
+      main .container .mointerrise .total-recordnumber .progers .range {
+        margin-left: 55px;
+      }
+      main .container .mointerrise .total-recordnumber .progers::before {
+        left: 55px;
+      }
+      .model-back .container .back-project {
+        margin: 130px 209px 20px;
+      }
+      .model-support .container .support {
+        margin: 330px 306px 30px;
+      }
+}
+@media(max-width:768px){
+    main .container {
+        margin: 0px 92px;
+      }
+      main .container .mointerrise .about .about-content .bam {
+        margin: 20px 0px 20px 50px;
+      }
+      main .container .mointerrise .about .mahogany-edition .mahogany {
+        margin: 20px 37px 20px 30px;
+      }
+      main .container .mointerrise .about .mahogany-edition div h2 {
+        font-size: 21px;
+      }
+      .model-back .container .back-project {
+        margin: 130px 90px 20px;
+      }
+      .model-support .container .support {
+        margin: 330px 179px 30px;
+      }
+}
+@media(max-width:480px){
+    header .container .crowd .hamburger {
+        display: block;
+        cursor: pointer;
+      }
+      header .container {
+        padding: 50px 38px;
+      }
+    header .container .crowd .items {
+        position: absolute;
+        background: #fff;
+        border-radius: 5px;
+        width: 420px;
+        height: 165px;
+        left: 35px;
+        top: 100px;
+        z-index: 1;
+        display: none;
+        transition: all 0.6s;
+      }
+      header .container .crowd .items .item {
+        display: block;
+        padding-left: 20px;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        margin-right: 0;
+      }
+      header .container .crowd .items .item:not(:last-child){
+        border-bottom: 1px solid #dbd8d8;
+      }
+      header .container .crowd .items .item a {
+        font-weight: 700;
+        color: #000;
+      }
+        main {
+          position: absolute;
+          top: 100px;
+          width: 470px;
+        }
+        main .container .mointerrise .mastercraft .logo-mastercraft {
+            left: 121px;
+          }
+      main .container .mointerrise .mastercraft h1 {
+        margin: 50px 0 45px;
+        font-size: 23px;
+        text-align: center;
+      }
+      main .container .mointerrise .mastercraft p {
+        text-align: center;
+        margin: 0;
+      }
+      main .container .mointerrise .mastercraft .book .mark .boomar {
+       display: none;
+      }
+      main .container .mointerrise .mastercraft .book .back {
+        margin-left: 10px;
+      }
+      main .container .mointerrise .mastercraft .book .mark .icon-bookmark {
+        top: -27px;
+        right: -10px;
+      }
+      main .container .mointerrise .total-recordnumber .numbers {
+        flex-direction: column;
+      }
+      main .container .mointerrise .total-recordnumber .numbers .backer {
+        border-right: 0;
+        border-left:0;
+        padding: 0 50px;
+      }
+      main .container .mointerrise .total-recordnumber .progers .range {
+        margin-left: 28px;
+      }
+      main .container .mointerrise .total-recordnumber .progers::before {
+        left: 28px;
+      }
+      main .container .mointerrise .about .about-content h2 {
+        margin: 40px 0 30px 20px;
+      }
+      main .container .mointerrise .about .about-content .bam {
+        margin: 20px 0px 20px 20px;
+      }
+      main .container .mointerrise .about .about-content .feat {
+        margin: 20px 50px 20px 20px;
+      }
+      main .container .mointerrise .about .bamboo {
+        margin: 0 18px 0;
+      }
+      main .container .mointerrise .about .bamboo div {
+        justify-content:flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 0px;
+      }
+      main .container .mointerrise .about .bamboo div h2 {
+        margin: 40px 0 0px 16px;
+      }
+      main .container .mointerrise .about .bamboo div .pledge {
+        margin: 10px 0px 0px 16px;
+      }
+      main .container .mointerrise .about .bamboo .ergonomic {
+        margin: 20px 1px 20px 16px;
+      }
+      main .container .mointerrise .about .bamboo .select {
+        margin-left: 20px;
+      }
+      main .container .mointerrise .about .bamboo .select {
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 20px;
+        padding-bottom: 20px;
+      }
+      main .container .mointerrise .about .bamboo .select h3 {
+        margin: 40px 20px 0px 9px;
+      }
+      main .container .mointerrise .about .black-edition {
+        margin: 20px 18px 20px;
+      }
+      main .container .mointerrise .about .black-edition div {
+        justify-content:flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 0px;
+      }
+      main .container .mointerrise .about .black-edition div h2 {
+        margin: 40px 0 0px 16px;
+      }
+      main .container .mointerrise .about .black-edition div .pledge {
+        margin: 10px 0px 0px 16px;
+      }
+      main .container .mointerrise .about .black-edition .black {
+        margin: 20px 1px 20px 16px;
+      }
+      main .container .mointerrise .about .black-edition .select {
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 20px;
+        padding-bottom: 20px;
+        margin-left: 20px;
+      }
+      main .container .mointerrise .about .black-edition .select h3 {
+        margin: 40px 20px 0px 9px;
+      }
+      main .container .mointerrise .about .mahogany-edition {
+        margin: 20px 18px 20px;
+      }
+      main .container .mointerrise .about .mahogany-edition div {
+        justify-content:flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 0px;
+      }
+      main .container .mointerrise .about .mahogany-edition div h2 {
+        margin: 40px 0 0px 16px;
+      }
+      main .container .mointerrise .about .mahogany-edition div .pledge {
+        margin: 10px 0px 0px 16px;
+      }
+      main .container .mointerrise .about .mahogany-edition .mahogany {
+        margin: 20px 1px 20px 16px;
+      }
+      main .container .mointerrise .about .mahogany-edition .select {
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 20px;
+        padding-bottom: 20px;
+        margin-left: 20px;
+      }
+      main .container .mointerrise .about .mahogany-edition .select h3 {
+        margin: 40px 20px 0px 9px;
+      }
+      .model-back .container .back-project p {
+        margin: 20px 0px 20px 30px;
+      }
+      .model-back .container .back-project #form .pled-no-reward p {
+        margin: 30px 0 30px 5px;
+        text-align: center;
+      }
+      .model-back .container .back-project #form .pled-no-reward.active .enter-pledg {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+      }
+      .model-back .container .back-project #form .pled-no-reward.active .enter-pledg div{
+        text-align: center;
+      }
+      .model-back .container .back-project #form .pled-no-reward .enter-pledg div .continue {
+        margin-top: 10px;
+        margin-left: 20px;
+      }
+      .model-back .container .back-project #form .bambo-stand .pled {
+        position: relative;
+        top: 19px;
+        left: 56px;
+      }
+      .model-back .container .back-project #form .bambo-stand h3 {
+        top: 220px;
+        left: 30px;
+      }
+      .model-back .container .back-project #form .bambo-stand p {
+        margin: 30px 0 30px 0px;
+        text-align: center;
+      }
+      .model-back .container .back-project #form .bambo-stand.active .enter-pledg {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+        
+      }
+      .model-back .container .back-project #form .bambo-stand.active .enter-pledg div{
+        text-align: center;
+      }
+      .model-back .container .back-project #form .bambo-stand .enter-pledg div .continue {
+        margin-top: 10px;
+        margin-left: 20px;
+      }
+      .model-back .container .back-project #form .black-edition-stand .pled {
+        position: relative;
+        top: 19px;
+        left: 56px;
+      }
+      .model-back .container .back-project #form .black-edition-stand p {
+        margin: 30px 0 30px 0px;
+        text-align: center;
+      }
+      .model-back .container .back-project #form .black-edition-stand h3 {
+        top: 190px;
+        left: 30px;
+      }
+      .model-back .container .back-project #form .black-edition-stand.active .enter-pledg {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+      }
+      .model-back .container .back-project #form .black-edition-stand.active .enter-pledg div{
+        text-align: center;
+      }
+      .model-back .container .back-project #form .black-edition-stand .enter-pledg div .continue {
+        margin-top: 10px;
+        margin-left: 20px;
+      }
+      .model-back .container .back-project #form .mahogany-special .pled {
+        position: relative;
+        top: 19px;
+        left: 56px;
+      }
+      .model-back .container .back-project #form .mahogany-special p {
+        margin: 30px 0 30px 0px;
+        text-align: center;
+      }
+      .model-back .container .back-project #form .mahogany-special h3 {
+        top: 190px;
+        left: 30px;
+      }
+      .model-back .container .back-project #form .mahogany-special .enter-pledg {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+      }
+      .model-back .container .back-project #form .mahogany-special .enter-pledg div{
+       text-align: center;
+      }
+      .model-back .container .back-project #form .mahogany-special .enter-pledg div .continue {
+        margin-top: 10px;
+        margin-left: 20px;
+      }
+      .model-support .container .support {
+        margin: 330px 92px 30px;
+      }
+      .model-support .container .support p {
+        margin: 30px 0px;
+      }
+      
+}
+@media(max-width:375px){
+    header .container .crowd .items {
+        width: 360px;
+        left: 7px;
+      }
+    main {
+        top: 100px;
+        width: 370px;
+      }
+      main .container {
+        margin: 0px 35px;
+      }
+      main .container .mointerrise .mastercraft .logo-mastercraft {
+        left: 125px;
+        width: 45px;
+      }
+      main .container .mointerrise .mastercraft h1 {
+        font-size: 23px;
+      }
+      main .container .mointerrise .mastercraft .book .back {
+        padding: 15px 5px;
+        margin-left:5px;
+      }
+      main .container .mointerrise .mastercraft .book .mark .icon-bookmark {
+        right: -28px;
+      }
+      main .container .mointerrise .about .about-content h2 {
+        font-size: 23px;
+      }
+      main .container .mointerrise .about .bamboo div h2 {
+        font-size: 23px;
+      }
+      main .container .mointerrise .about .bamboo .select .select-bambo {
+        padding: 10px 15px;
+        margin-right: 0px;
+      }
+      main .container .mointerrise .about .black-edition div h2 {
+        font-size: 23px;
+      }
+      main .container .mointerrise .about .black-edition .select .select-black {
+        padding: 10px 15px;
+        margin-right: 0px;
+      }
+      main .container .mointerrise .about .mahogany-edition div h2 {
+        font-size: 23px;
+      }
+      main .container .mointerrise .about .mahogany-edition .select .select-stock {
+        padding: 10px 15px;
+        margin-right: 0px;
+      }
+      .model-back .container .back-project {
+        margin: 77px 35px 20px;
+      }
+      .model-back .container .back-project #form .pled-no-reward label {
+        top: 20px;
+        left: 50px;
+      }
+      .model-back .container .back-project #form .pled-no-reward p {
+        margin: 39px 0 30px 0px;
+      }
+      .model-back .container .back-project #form .bambo-stand h3 {
+        top: 195px;
+        left: 23px;
+      }
+      .model-support .container .support {
+        margin: 330px 55px 30px;
+      }
+      
+}
+@media(max-width:320px){
+    header .container {
+        padding: 15px 38px;
+      }
+    header .container .crowd .items {
+        width: 306px;
+        left: 6px;
+      }
+      main {
+        top: 84px;
+        width: 310px;
+      }
+      main .container .mointerrise .mastercraft .logo-mastercraft {
+        left: 96px;
+      }
+      .model-back .container .back-project {
+        margin: 77px 15px 20px;
+      }
+      .model-back .container .back-project #form .bambo-stand h3 {
+        top: 219px;
+      }
+      .model-support .container .support {
+        margin: 330px 50px 30px;
+      }
+      .model-support .container .support h2 {
+        font-size: 23px;
+      }
+}
+@media(max-width:240px){
+    main {
+        top: 58px;
+        left: 10px;
+        width: 210px;
+      }
+      main .container {
+        margin: 0px 0px;
+      }
+      header .container .crowd .items {
+        width: 226px;
+      }
+      main .container .mointerrise .mastercraft h1 {
+        font-size: 20px;
+      }
+      main .container .mointerrise .about .about-content h2 {
+        font-size: 20px;
+      }
+      main .container .mointerrise .about .bamboo div h2 {
+        font-size: 20px;
+      }
+      main .container .mointerrise .about .black-edition div h2 {
+        font-size: 20px;
+      }
+      main .container .mointerrise .about .mahogany-edition div h2 {
+        font-size: 20px;
+      }
+      .model-back .container .back-project {
+        margin: 77px 15px 20px;
+      }
+      .model-back .container .back-project h2 {
+        margin: 20px 0px 0px 7px;
+        font-size: 20px;
+      }
+      .model-back .container .back-project p {
+        margin: 20px 0px 20px 0px;
+        text-align: center;
+      }
+      .model-back .container .back-project #form .pled-no-reward {
+        margin: 0 10px;
+      }
+      .model-back .container .back-project #form .pled-no-reward label {
+        font-size: 14px;
+      }
+      .model-back .container .back-project #form .bambo-stand {
+        margin: 10px 10px;
+      }
+      .model-back .container .back-project #form .black-edition-stand {
+        margin: 10px 10px;
+      }
+      .model-back .container .back-project #form .black-edition-stand label {
+        left: 51px;
+      }
+      .model-back .container .back-project #form .black-edition-stand h3 {
+        top: 201px;
+        left: 17px;
+      }
+      .model-back .container .back-project #form .mahogany-special {
+        margin: 10px 10px;
+      }
+      .model-back .container .back-project #form .mahogany-special label {
+        left: 52px;
+      }
+      .model-back .container .back-project #form .mahogany-special h3 {
+        top: 201px;
+        left: 20px;
+      }
+      .model-support .container .support {
+        margin: 330px 10px 30px;
+      }
+}
